@@ -20,13 +20,6 @@ public class RequestFiguraCircular extends Request{
 	}
 
 	@Override
-	public Double getDiamtro() {
-		return diametro;
-	}
-
-	/**
-	 * @return the diametro
-	 */
 	public Double getDiametro() {
 		return diametro;
 	}

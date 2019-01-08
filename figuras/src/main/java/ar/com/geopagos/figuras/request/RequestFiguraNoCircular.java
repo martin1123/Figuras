@@ -27,7 +27,7 @@ public class RequestFiguraNoCircular extends Request {
 	}
 
 	@Override
-	public Double getDiamtro() {
+	public Double getDiametro() {
 		return null;
 	}
 

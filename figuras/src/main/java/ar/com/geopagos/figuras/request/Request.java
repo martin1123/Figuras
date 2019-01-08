@@ -47,5 +47,5 @@ public abstract class Request {
 	public abstract Double getAltura();
 	
 	//Necesario en caso de ser circulo
-	public abstract Double getDiamtro();
+	public abstract Double getDiametro();
 }
