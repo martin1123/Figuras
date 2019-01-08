@@ -1,5 +1,8 @@
 package ar.com.geopagos.figuras.service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.springframework.stereotype.Service;
 
 import ar.com.geopagos.figuras.exception.FiguraNoEncontradaException;
@@ -44,6 +47,11 @@ public class FiguraServiceImpl implements FiguraService {
 		
 		//Retorna el Json de la figura obtenida
 		return MapperUtil.getMapper().map(figura, FiguraResponse.class);
+	}
+
+	@Override
+	public List<FiguraResponse> obtenerTodasLasFiguras() {
+		return FigurasStore.getAllFiguras().stream().map(f -> MapperUtil.getMapper().map(f, FiguraResponse.class)).collect(Collectors.toList());
 	}
 
 }
