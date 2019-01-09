@@ -20,7 +20,7 @@ public class FactoryStore {
 	private static final Map<FactoryFiguraType,FactoryFigura> factories = new HashMap<>();
 	
 	/**
-	 * Crea Mapa con cada factory indexado por su tipo
+	 * Crea Mapa con cada factory indexado por su tipo. Los factorys son inyectados en el atributo factoriesFiguras.
 	 */
     @PostConstruct
     public void initFactoryStore() {
