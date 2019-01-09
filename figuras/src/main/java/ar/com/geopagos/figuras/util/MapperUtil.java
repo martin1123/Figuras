@@ -3,8 +3,8 @@ package ar.com.geopagos.figuras.util;
 import org.modelmapper.ModelMapper;
 
 /**
- * Class that provides support for class mapping
- * @author Teceng-Gaming
+ * Clase que provee soporte para el mapeo entre objetos de clases distintas
+ * 
  *
  */
 public class MapperUtil {
